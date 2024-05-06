@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secret</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <h1>Варианты подарков мне на др &#129323;</h1>
+        <button onclick="showRandomImage()">
+        Показать рандомную картинку
+          </button>
+    
+    <div id="imageContainer"></div>
+
+    <script>
+        function showRandomImage() {
+            var images = [
+                "image1.jpg",
+                "image2.jpg",
+                "image3.jpg",
+                "image4.jpg",
+                "image5.jpg",
+                "image6.jpg",
+                "image7.jpg",
+                "image8.jpg",
+                "image9.jpg"
+            ];
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var randomImage = images[randomIndex];
+            var imageContainer = document.getElementById("imageContainer");
+            imageContainer.innerHTML = "<img src='" + randomImage + "' alt='Рандомная картинка'>";
+        }
+    </script>
+    <footer>
+    P.s. лучше ничего конечно не дарить, потому что я и так счастлива за то что вы у меня есть, и все эти материальные мелочи не так важны, ваше внимание и любовь намного дороже, спасибо что вы у меня есть💞<br>
+    P.s.s. в сайте встроен рандомайзер поэтому некоторые картинки повторяються по несколько раз😊
+</footer></body>
+</html>

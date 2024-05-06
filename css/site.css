@@ -50,8 +50,3 @@ button {
     transition: 100ms;
   }
   
-  @media only screen and (max-width:800px){
-    main, nav, aside, section{
-      width: 100%;
-    }
-  }
